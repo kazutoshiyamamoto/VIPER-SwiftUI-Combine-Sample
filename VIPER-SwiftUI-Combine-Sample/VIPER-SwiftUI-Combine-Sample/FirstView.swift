@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+protocol FirstViewOutput: AnyObject {
+    func firstViewDidTapAddProductButton()
+    func firstViewDidTapOrderButton()
+}
+
 struct FirstView: View {
     class State: ObservableObject {
         @Published var cartProducts: [String]
