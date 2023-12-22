@@ -30,6 +30,13 @@ struct FirstView: View {
     }
     
     var body: some View {
+                Button(action: {
+                    delegate?.firstViewDidTapAddProductButton()
+                }, label: {
+                    Text("商品を追加")
+                })
+                .padding(.top)
+                
     }
 }
 
