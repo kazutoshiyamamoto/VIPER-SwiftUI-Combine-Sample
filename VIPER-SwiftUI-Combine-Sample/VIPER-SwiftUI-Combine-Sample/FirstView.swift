@@ -30,6 +30,7 @@ struct FirstView: View {
     }
     
     var body: some View {
+        GeometryReader { geometry in
             VStack {
                 Button(action: {
                     delegate?.firstViewDidTapAddProductButton()
@@ -53,6 +54,8 @@ struct FirstView: View {
                 })
                 .padding(.bottom)
             }
+            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+        }
     }
 }
 
