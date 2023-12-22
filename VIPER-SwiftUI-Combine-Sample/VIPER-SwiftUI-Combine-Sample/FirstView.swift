@@ -46,6 +46,12 @@ struct FirstView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 25))
                 .padding()
                 
+                Button(action: {
+                    delegate?.firstViewDidTapOrderButton()
+                }, label: {
+                    Text("注文する")
+                })
+                .padding(.bottom)
             }
     }
 }
