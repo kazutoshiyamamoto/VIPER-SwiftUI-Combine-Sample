@@ -30,6 +30,7 @@ struct FirstView: View {
     }
     
     var body: some View {
+            VStack {
                 Button(action: {
                     delegate?.firstViewDidTapAddProductButton()
                 }, label: {
@@ -37,6 +38,15 @@ struct FirstView: View {
                 })
                 .padding(.top)
                 
+                List {
+                    ForEach(0 ..< state.cartProducts.count, id: \.self) { index in
+                        Text(state.cartProducts[index])
+                    }
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .padding()
+                
+            }
     }
 }
 
