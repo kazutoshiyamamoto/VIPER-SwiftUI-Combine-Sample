@@ -20,6 +20,15 @@ struct FirstView: View {
             self.cartProducts = cartProducts
         }
     }
+    
+    weak var delegate: FirstViewOutput?
+    @ObservedObject var state: State
+    
+    init(delegate: FirstViewOutput, state: State) {
+        self.delegate = delegate
+        self.state = state
+    }
+    
     var body: some View {
     }
 }
