@@ -11,6 +11,15 @@ import Combine
 class FirstViewPresenter {
     let router: FirstViewRouter
     
+    var cartProductsSubject = PassthroughSubject<[String], Never>()
+    
+    var cartProducts = [String]() {
+        didSet {
+            cartProductsSubject
+                .send(cartProducts)
+        }
+    }
+    
     init(router: FirstViewRouter) {
         self.router = router
     }
