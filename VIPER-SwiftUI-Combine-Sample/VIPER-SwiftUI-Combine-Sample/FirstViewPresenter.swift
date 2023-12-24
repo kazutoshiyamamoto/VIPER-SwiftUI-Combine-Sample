@@ -9,5 +9,10 @@ import Foundation
 import Combine
 
 class FirstViewPresenter {
+    let router: FirstViewRouter
+    
+    init(router: FirstViewRouter) {
+        self.router = router
+    }
     
 }
