@@ -15,4 +15,7 @@ class FirstViewPresenter {
         self.router = router
     }
     
+    func presentDetail() {
+        router.presentDetail()
+    }
 }
