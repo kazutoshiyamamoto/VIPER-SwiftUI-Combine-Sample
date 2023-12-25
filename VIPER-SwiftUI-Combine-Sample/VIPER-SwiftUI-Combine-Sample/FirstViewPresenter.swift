@@ -24,6 +24,10 @@ class FirstViewPresenter {
         self.router = router
     }
     
+    func viewDidLoad() {
+        cartProducts = ["Product \(cartProducts.count)"]
+    }
+    
     func presentDetail() {
         router.presentDetail()
     }
