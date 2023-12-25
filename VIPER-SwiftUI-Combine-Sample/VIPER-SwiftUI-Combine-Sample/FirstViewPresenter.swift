@@ -28,6 +28,11 @@ class FirstViewPresenter {
         cartProducts = ["Product \(cartProducts.count)"]
     }
     
+    func addProduct() {
+        // NOTE: サンプルのためinteractorは省略
+        cartProducts.append("Product \(cartProducts.count)")
+    }
+    
     func presentDetail() {
         router.presentDetail()
     }
