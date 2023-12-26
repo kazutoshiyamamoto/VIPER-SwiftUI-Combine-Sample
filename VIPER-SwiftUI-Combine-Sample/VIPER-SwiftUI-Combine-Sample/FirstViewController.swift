@@ -20,6 +20,13 @@ class FirstViewController: UIViewController {
         addChild(hostingVC)
         hostingVC.didMove(toParent: self)
         view.addSubview(hostingVC.view)
+        hostingVC.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            hostingVC.view.topAnchor.constraint(equalTo: view.topAnchor),
+            hostingVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            hostingVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            hostingVC.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
 
 
