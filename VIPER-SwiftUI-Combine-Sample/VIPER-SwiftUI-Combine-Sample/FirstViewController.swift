@@ -38,7 +38,9 @@ class FirstViewController: UIViewController {
             }
             .store(in: &cancellables)
         
+        presenter.viewDidLoad()
     }
+}
 
 
 }
