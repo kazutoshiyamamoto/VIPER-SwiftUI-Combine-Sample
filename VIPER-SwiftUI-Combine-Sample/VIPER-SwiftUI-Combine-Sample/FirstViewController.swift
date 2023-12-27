@@ -7,10 +7,14 @@
 
 import UIKit
 import SwiftUI
+import Combine
 
 class FirstViewController: UIViewController {
-
+    var presenter: FirstViewPresenter!
+    
     private let firstViewState = FirstView.State(cartProducts: [])
+    
+    private var cancellables: Set<AnyCancellable> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,13 @@ class FirstViewController: UIViewController {
             hostingVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             hostingVC.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        
+        presenter.cartProductsSubject
+            .sink { [weak self] value in
+                self?.firstViewState.cartProducts = value
+            }
+            .store(in: &cancellables)
+        
     }
 
 
