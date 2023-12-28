@@ -42,6 +42,9 @@ class FirstViewController: UIViewController {
     }
 }
 
-
+extension FirstViewController: FirstViewOutput {
+    func firstViewDidTapAddProductButton() {
+        presenter.addProduct()
+    }
 }
 
