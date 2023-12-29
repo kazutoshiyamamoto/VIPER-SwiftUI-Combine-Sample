@@ -46,5 +46,9 @@ extension FirstViewController: FirstViewOutput {
     func firstViewDidTapAddProductButton() {
         presenter.addProduct()
     }
+    
+    func firstViewDidTapOrderButton() {
+        presenter.presentDetail()
+    }
 }
 
