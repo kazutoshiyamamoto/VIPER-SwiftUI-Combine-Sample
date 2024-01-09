@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD16AF4C2B37248100249587 /* FirstViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD16AF4B2B37248100249587 /* FirstViewPresenter.swift */; };
+		FD16AF4E2B3724DF00249587 /* FirstViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD16AF4D2B3724DF00249587 /* FirstViewRouter.swift */; };
 		FD9892AA2B33228000029588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9892A92B33228000029588 /* AppDelegate.swift */; };
 		FD9892AC2B33228000029588 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9892AB2B33228000029588 /* SceneDelegate.swift */; };
-		FD9892AE2B33228000029588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9892AD2B33228000029588 /* ViewController.swift */; };
+		FD9892AE2B33228000029588 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9892AD2B33228000029588 /* FirstViewController.swift */; };
 		FD9892B12B33228000029588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9892AF2B33228000029588 /* Main.storyboard */; };
 		FD9892B32B33228100029588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9892B22B33228100029588 /* Assets.xcassets */; };
 		FD9892B62B33228100029588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9892B42B33228100029588 /* LaunchScreen.storyboard */; };
 		FD9892C12B33228100029588 /* VIPER_SwiftUI_Combine_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9892C02B33228100029588 /* VIPER_SwiftUI_Combine_SampleTests.swift */; };
 		FD9892CB2B33228100029588 /* VIPER_SwiftUI_Combine_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9892CA2B33228100029588 /* VIPER_SwiftUI_Combine_SampleUITests.swift */; };
 		FD9892CD2B33228100029588 /* VIPER_SwiftUI_Combine_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9892CC2B33228100029588 /* VIPER_SwiftUI_Combine_SampleUITestsLaunchTests.swift */; };
+		FD9892DA2B346D4000029588 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9892D92B346D4000029588 /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD16AF4B2B37248100249587 /* FirstViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewPresenter.swift; sourceTree = "<group>"; };
+		FD16AF4D2B3724DF00249587 /* FirstViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewRouter.swift; sourceTree = "<group>"; };
 		FD9892A62B33228000029588 /* VIPER-SwiftUI-Combine-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-SwiftUI-Combine-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9892A92B33228000029588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD9892AB2B33228000029588 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD9892AD2B33228000029588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD9892AD2B33228000029588 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		FD9892B02B33228000029588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD9892B22B33228100029588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD9892B52B33228100029588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		FD9892C62B33228100029588 /* VIPER-SwiftUI-Combine-SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-SwiftUI-Combine-SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9892CA2B33228100029588 /* VIPER_SwiftUI_Combine_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_SwiftUI_Combine_SampleUITests.swift; sourceTree = "<group>"; };
 		FD9892CC2B33228100029588 /* VIPER_SwiftUI_Combine_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_SwiftUI_Combine_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD9892D92B346D4000029588 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 			children = (
 				FD9892A92B33228000029588 /* AppDelegate.swift */,
 				FD9892AB2B33228000029588 /* SceneDelegate.swift */,
-				FD9892AD2B33228000029588 /* ViewController.swift */,
+				FD9892D92B346D4000029588 /* FirstView.swift */,
+				FD9892AD2B33228000029588 /* FirstViewController.swift */,
+				FD16AF4B2B37248100249587 /* FirstViewPresenter.swift */,
+				FD16AF4D2B3724DF00249587 /* FirstViewRouter.swift */,
 				FD9892AF2B33228000029588 /* Main.storyboard */,
 				FD9892B22B33228100029588 /* Assets.xcassets */,
 				FD9892B42B33228100029588 /* LaunchScreen.storyboard */,
@@ -258,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD9892AE2B33228000029588 /* ViewController.swift in Sources */,
+				FD16AF4E2B3724DF00249587 /* FirstViewRouter.swift in Sources */,
+				FD9892AE2B33228000029588 /* FirstViewController.swift in Sources */,
+				FD9892DA2B346D4000029588 /* FirstView.swift in Sources */,
 				FD9892AA2B33228000029588 /* AppDelegate.swift in Sources */,
+				FD16AF4C2B37248100249587 /* FirstViewPresenter.swift in Sources */,
 				FD9892AC2B33228000029588 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
